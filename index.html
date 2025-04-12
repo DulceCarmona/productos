@@ -13,9 +13,35 @@
 <body>
 
     <main class="container my-5">
+
+      <!-- btn -->
+<div class="btn-group">
+  <button type="button" class="btn btn-warning">Categorias</button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+
+  <ul class="dropdown-menu" id="ulMenu">
+
+      <li>
+          <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" onclick="getData('');" href="#">Todas las categorias</a></li>
+  </ul>
+</div> <!--"btn-group"--->
+
+      <hr>
+
+      
         <h1 class="mb-4 text-center">Productos</h1>
         <div id="product-container" class="row g-3"></div>
+
+<hr/>
+
     </main>
+
+
 
     <!-- modal -->
     <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
